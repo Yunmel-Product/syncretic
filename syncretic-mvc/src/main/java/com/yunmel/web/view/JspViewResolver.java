@@ -12,11 +12,17 @@ import javax.servlet.http.HttpServletResponse;
 import com.yunmel.web.ViewResolver;
 
 public class JspViewResolver implements ViewResolver {
-
+	private String root = "/";
 	/**
 	 * Init JspViewResolver.
 	 */
 	public void init(ServletContext context) throws ServletException {
+		Object rootObj = context.getAttribute("root");
+		if (null != rootObj) {
+			root = (String) rootObj;
+			if (!root.endsWith("/"))
+				root = root.concat("/");
+		}
 	}
 
 	/**
@@ -30,9 +36,10 @@ public class JspViewResolver implements ViewResolver {
 				request.setAttribute(key, model.get(key));
 			}
 		}
-		if(!view.endsWith(".jsp")){
+		if (!view.endsWith(".jsp")) {
 			view += ".jsp";
 		}
+		view = root.concat(view);
 		request.getRequestDispatcher(view).forward(request, response);
 	}
 
