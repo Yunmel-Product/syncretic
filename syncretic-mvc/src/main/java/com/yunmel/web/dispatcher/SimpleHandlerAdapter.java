@@ -24,8 +24,9 @@ import com.yunmel.web.meta.RespType;
 
 public class SimpleHandlerAdapter implements HandlerAdapter {
 	private static Logger LOG = LoggerFactory.getLogger(SimpleHandlerAdapter.class);
-
+	
 	public SimpleHandlerAdapter() {
+		
 	}
 
 	@Override
