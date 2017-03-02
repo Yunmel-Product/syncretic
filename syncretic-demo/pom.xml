@@ -12,7 +12,7 @@
 	<properties>
 		<shiro.version>1.3.2</shiro.version>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>com.yunmel.syncretic</groupId>
@@ -39,6 +39,23 @@
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-web</artifactId>
 			<version>${shiro.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sql2o</groupId>
+			<artifactId>sql2o</artifactId>
+			<version>1.5.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.40</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>19.0</version>
 		</dependency>
 	</dependencies>
 </project>
