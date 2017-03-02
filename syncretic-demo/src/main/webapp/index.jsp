@@ -2,12 +2,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>演示：FullCalendar应用——增删改数据操作</title>
-<meta name="keywords" content="日程安排,FullCalendar,日历,JSON,jquery实例">
-<meta name="description" content="在线演示FullCalendar新建、修改和删除日程事件的示例。">
+<title>日程管理</title>
 <link rel="stylesheet" type="text/css" href="http://www.helloweba.com/demo/css/main.css">
 <link rel="stylesheet" type="text/css" href="/static/css/fullcalendar.css">
-<link rel="stylesheet" type="text/css" href="/static/css/fancybox.css">
 <style type="text/css">
 #calendar{width:960px; margin:20px auto 10px auto}
 .fancy{width:450px; height:auto}
@@ -71,7 +68,7 @@ $(function() {
 
 <body>
 <div id="header">
-   <div id="logo"><h1><a href="http://www.helloweba.com" title="返回helloweba首页">helloweba</a></h1></div>
+   <div id=""><h1><a href="" title="日程管理">日程管理</a></h1></div>
 </div>
 
 <div id="main" style="width:1060px">
