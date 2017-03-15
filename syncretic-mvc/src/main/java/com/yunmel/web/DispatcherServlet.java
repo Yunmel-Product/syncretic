@@ -25,7 +25,7 @@ import com.yunmel.web.dispatcher.ServiceHandler;
 import com.yunmel.web.exception.ControllerNotFoundException;
 import com.yunmel.web.exception.MethodNotAllowedException;
 import com.yunmel.web.meta.RespType;
-import com.yunmel.web.view.JspViewResolver;
+import com.yunmel.web.view.JetBrickViewResolver;
 
 public class DispatcherServlet extends HttpServlet {
 	private static final long serialVersionUID = 3933217248767534032L;
@@ -44,7 +44,9 @@ public class DispatcherServlet extends HttpServlet {
 			LOG.error("annotation 注入失败...", e);
 		}
 		this.sh = ServiceHandler.initialize();
-		this.viewResolver = new JspViewResolver();
+		
+		this.viewResolver = new JetBrickViewResolver();
+		this.viewResolver.init(config.getServletContext());
 		
 		long cos = System.currentTimeMillis() - start;
 		LOG.info("服务器启动成功，功花费[{}]ms.", cos);
