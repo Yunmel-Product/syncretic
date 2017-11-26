@@ -48,7 +48,6 @@
 		</plugins>
 	</build>
 	<modules>
-		<module>syncretic-util</module>
 		<module>syncretic-mvc</module>
 		<module>syncretic-demo</module>
 	</modules>

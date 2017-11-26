@@ -5,7 +5,7 @@ import java.util.Random;
 
 import com.yunmel.app.db.DaoUtils;
 import com.yunmel.app.model.Events;
-import com.yunmel.web.annotation.Service;
+import com.yunmel.extreme.annotation.Service;
 
 @Service
 public class EventsService {

@@ -5,14 +5,14 @@ import java.util.List;
 
 import com.yunmel.app.model.Events;
 import com.yunmel.app.service.EventsService;
-import com.yunmel.web.annotation.Autowired;
-import com.yunmel.web.annotation.Controller;
-import com.yunmel.web.annotation.Get;
-import com.yunmel.web.annotation.ModelAttribute;
-import com.yunmel.web.annotation.Post;
-import com.yunmel.web.annotation.RequestMapping;
-import com.yunmel.web.annotation.ResponseBody;
-import com.yunmel.web.meta.ModelMap;
+import com.yunmel.extreme.annotation.Autowired;
+import com.yunmel.extreme.annotation.Controller;
+import com.yunmel.extreme.annotation.web.Get;
+import com.yunmel.extreme.annotation.web.ModelAttribute;
+import com.yunmel.extreme.annotation.web.Post;
+import com.yunmel.extreme.annotation.web.RequestMapping;
+import com.yunmel.extreme.annotation.web.ResponseBody;
+import com.yunmel.extreme.web.meta.ModelMap;
 
 @Controller
 public class IndexController {

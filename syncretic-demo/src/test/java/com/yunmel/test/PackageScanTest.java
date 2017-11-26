@@ -3,8 +3,8 @@ package com.yunmel.test;
 import java.io.IOException;
 import java.util.List;
 
-import com.yunmel.util.scan.PackUtils;
-import com.yunmel.web.annotation.Controller;
+import com.yunmel.extreme.annotation.Controller;
+import com.yunmel.extreme.util.PackUtils;
 
 public class PackageScanTest {
 
