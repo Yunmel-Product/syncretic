@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cjxy-orm-config> 
+    <session-factory>
+       <!--  <property name="connection.dirver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql:///blog</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">jiangfan96</property> -->
+        
+        <!-- 只可以放在类路径下面  开启 c3p0-->
+        <property name="com.yunmel.orm">true</property>
+        
+        <property name="show_sql">true</property>
+        <!-- mysql(5.5) oracle(10g) -->
+        <property name="orm.dialect">mysql</property>
+        <!--<property name="orm.dialect">oracle</property>-->
+        
+        <!-- 映射Pojo -->
+        <mapping class="com.yunmel.app.sys.model.User"/>
+    </session-factory>
+</cjxy-orm-config>
