@@ -24,7 +24,10 @@ public class JetBrickViewResolver implements ViewResolver {
 	@Override
 	public void init(ServletContext context) throws ServletException {
 		this.jetEngine = JetWebEngine.getEngine();
-		this.suffix = jetEngine.getConfig().getTemplateSuffix();
+		if (this.jetEngine == null) {
+			this.jetEngine = JetWebEngine.create(context);
+		}
+		this.suffix = "jsp";//jetEngine.getConfig().getTemplateSuffix();
 	}
 
 	@Override

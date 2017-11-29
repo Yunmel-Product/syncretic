@@ -7,7 +7,7 @@
 	<servlet>
 		<description>yunmel mvc servlet</description>
 		<servlet-name>yunmelMvc</servlet-name>
-		<servlet-class>com.yunmel.web.DispatcherServlet</servlet-class>
+		<servlet-class>com.yunmel.extreme.web.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>package</param-name>
 			<param-value>com.yunmel.app</param-value>
@@ -22,7 +22,7 @@
 	<listener>
 		<listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
 	</listener>
-
+<!-- 
 	<filter>
 		<filter-name>ShiroFilter</filter-name>
 		<filter-class>org.apache.shiro.web.servlet.ShiroFilter</filter-class>
@@ -36,7 +36,7 @@
 		<dispatcher>INCLUDE</dispatcher>
 		<dispatcher>ERROR</dispatcher>
 	</filter-mapping>
-
+ -->
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
 		<url-pattern>/static/*</url-pattern>

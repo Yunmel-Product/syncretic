@@ -17,7 +17,7 @@ public class DaoUtils {
 	private static Sql2o sql2o;
 	private static Connection con;
 	static {
-		sql2o = new Sql2o("jdbc:mysql://localhost:3306/schedule?useUnicode=true&characterEncoding=utf8", "root", "123456");
+		sql2o = new Sql2o("jdbc:mysql://localhost:33352/schedule?useUnicode=true&characterEncoding=utf8", "root", "root");
 		con = sql2o.open();
 	}
 
